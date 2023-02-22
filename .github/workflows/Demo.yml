@@ -16,7 +16,7 @@ jobs:
     
     steps:
    
-    - name: Demo4
+    - name: Demo
       working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
       run: |
      
