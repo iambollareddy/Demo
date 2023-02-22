@@ -8,7 +8,8 @@ on:
     
 jobs:
   
-  execute-test:
+#  execute-test:
+  ReadyAPI_TestCase:
     
     runs-on: self-hosted
 
