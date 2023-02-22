@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/store/order/{orderId}" path="/store/order/{orderId}" id="4e773189-ccfa-4f1f-981c-8ad266f6f7e2" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4e773189-ccfa-4f1f-981c-8ad266f6f7e2fileName">%2Fstore%2Forder%2F%7BorderId%7D</con:setting></con:settings><con:parameters><con:parameter required="true"><con:name>orderId</con:name><con:style>TEMPLATE</con:style><con:dataType>integer</con:dataType><con:description>ID of the order that needs to be deleted</con:description></con:parameter></con:parameters><con:method name="getOrderById" id="60bf2109-4c63-4ed8-8a75-e7acdb275809" method="GET"><con:description>For valid response try integer IDs with value >= 1 and &lt;= 10. Other values will generated exceptions&#13;
+Find purchase order by ID</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{&#13;
+  "id" : 0,&#13;
+  "petId" : 0,&#13;
+  "quantity" : 0,&#13;
+  "shipDate" : "2015-07-20T15:49:04-07:00",&#13;
+  "status" : "placed",&#13;
+  "complete" : true&#13;
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>true</complete>
+</Order>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="b54bd74f-6bcb-4345-a7c7-33d5d0f87f9d" mediaType="application/json"><con:settings/><con:endpoint>http://petstore.swagger.io</con:endpoint><con:parameters/></con:request></con:method><con:method name="deleteOrder" id="679f107c-c9ac-4dcd-b1aa-742af2b87836" method="DELETE"><con:description>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors&#13;
+Delete purchase order by ID</con:description><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="479be670-00f1-467e-902f-80deec21b5d7" mediaType="application/json"><con:settings/><con:endpoint>http://petstore.swagger.io</con:endpoint><con:parameters/></con:request></con:method></con:resource>
