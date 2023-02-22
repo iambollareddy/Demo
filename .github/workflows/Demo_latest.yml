@@ -1,0 +1,35 @@
+# This is a basic workflow that is manually triggered
+
+name: Demo
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
+  #name: Do things every 5 minutes
+  #on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    
+jobs:
+  
+#  execute-test:
+  ReadyAPI_TestCase:
+    
+    runs-on: self-hosted
+
+    
+    steps:
+   
+    - name: Demo
+      working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
+      run: |
+     
+        C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin\testrunner.bat "-sDemo_TestSuite" -r -a -j "-fD:\ReadyAPI Reports" "-RJUnit-Style HTML Report" -FXML "-EDefault environment" D:\Demo-readyapi-project
