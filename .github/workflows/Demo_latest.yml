@@ -28,7 +28,7 @@ jobs:
     
     steps:
    
-    - name: Demo
+    - name: ReadyAPI&GitHub_Actions
       working-directory: 'C:\Users\chandra.bollareddy\AppData\Local\Programs\SmartBear\ReadyAPI-3.43.1\bin'
       run: |
      
